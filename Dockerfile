@@ -1,5 +1,5 @@
 # set the base image to create the image for react app
-FROM node:21-alpine
+FROM node:20-alpine
 
 # create a user with permissions to run the app
 # -S -> create a system user

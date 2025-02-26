@@ -2,10 +2,15 @@ function App() {
   return (
     <>
       <p>
-        Hello Docker! I am just a docker container running a react app. You are
-        seeing me because I am running on port 5173 and you are accessing me
-        through the browser.
+        Damn man, how you been? This is the container running the react app.
+        What is happenening?
       </p>
+      <div className="font-bold">
+        <p>
+          docker run -p 5173:5173 -v "${"{PWD}"}:/app" -v /app/node_modules -e
+          CHOKIDAR_USEPOLLING=true new-image
+        </p>
+      </div>
     </>
   );
 }
